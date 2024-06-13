@@ -1,0 +1,49 @@
+.hero {
+  color: #fff;
+  background: var(--pry-color);
+}
+
+.hero section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+
+  p {
+    margin-bottom: 2.4rem;
+  }
+}
+
+.links {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+
+  a {
+    color: #fff;
+  }
+
+  .work {
+    color: #1b1c2b;
+    padding: 1.6rem 5.6rem;
+    background: var(--yellow-color);
+    border-radius: 4rem;
+  }
+
+  .pricing {
+    color: var(--grey-color);
+  }
+}
+
+.right {
+  width: 100%;
+
+  img {
+    width: 100%;
+  }
+}

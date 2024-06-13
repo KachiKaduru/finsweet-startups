@@ -1,0 +1,65 @@
+.home {
+  color: var(--dark-color);
+}
+/* Work Section*/
+.workStn {
+  background-color: var(--grey-color);
+
+  section {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+  }
+
+  .workStnLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+
+    p {
+      width: 80%;
+    }
+
+    a {
+      color: var(--blue-color);
+    }
+  }
+
+  .workStnRight {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4.8rem 0;
+
+    .attribute {
+      display: grid;
+      gap: 0.8rem;
+
+      div {
+        width: 5rem;
+        height: 5rem;
+        display: grid;
+        place-content: center;
+        background: #5239fa;
+        color: #fff;
+        border-radius: 0.8rem;
+        margin-bottom: 0.8rem;
+      }
+
+      p {
+        width: 80%;
+      }
+    }
+  }
+}
+
+.projectStn {
+  section {
+    display: grid;
+    gap: 6.4rem;
+  }
+
+  .projectTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
