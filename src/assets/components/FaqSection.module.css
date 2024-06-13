@@ -1,0 +1,50 @@
+.faqSection {
+  section {
+    display: grid;
+    grid-template-columns: 0.7fr 1.33fr;
+  }
+
+  .left {
+    h2 {
+      width: 75%;
+    }
+    a {
+      color: var(--blue-color);
+    }
+  }
+
+  .faq {
+    padding: 3.2rem 0;
+    border-bottom: 2px solid #ececf1;
+
+    .questionBar {
+      display: grid;
+      grid-template-columns: 0.1fr 0.8fr 0.1fr;
+      align-items: center;
+
+      p {
+        color: var(--blue-color);
+      }
+
+      .imgCtn {
+        * {
+          transition: all 0.3s;
+        }
+
+        display: grid;
+        place-content: center;
+        height: 100%;
+        cursor: pointer;
+      }
+
+      img {
+        width: 1.8rem;
+        height: 1.8rem;
+      }
+    }
+
+    .answerBar {
+      padding: 1.6rem 15rem 1.6rem 8rem;
+    }
+  }
+}

@@ -1,14 +1,14 @@
 import logoImg from "../images/Finsweet Logo.svg";
 import styles from "../components/NavBar.module.css";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export default function NavBar() {
   return (
     <header className={styles.navbar}>
       <section>
-        <div className="logo">
+        <Link to="/" className="logo">
           <img src={logoImg} alt="" />
-        </div>
+        </Link>
 
         <nav>
           <ul>

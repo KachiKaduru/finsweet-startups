@@ -32,7 +32,7 @@ body {
 }
 
 section {
-  // border: 2px solid green;
+  border: 2px solid green;
   max-width: 1280px;
   margin: auto;
 }
@@ -43,7 +43,12 @@ section {
 }
 
 .pd-128 {
-  padding: 12.8rem 0;
+  // padding: 12.8rem 0;
+}
+
+.turn {
+  transition: all 0.3s;
+  rotate: 135deg;
 }
 
 //Fonts
@@ -87,6 +92,11 @@ section {
   font-weight: 400;
   line-height: 3.6rem;
 }
+.fs-18-600 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 3.2rem;
+}
 .fs-18-500 {
   font-size: 1.8rem;
   font-weight: 500;
@@ -99,6 +109,11 @@ section {
 }
 .fs-16-400 {
   font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.8rem;
+}
+.fs-12-400 {
+  font-size: 1.2rem;
   font-weight: 400;
   line-height: 2.8rem;
 }
