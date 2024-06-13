@@ -1,0 +1,42 @@
+.blogStn {
+  section {
+    display: grid;
+    gap: 6.4rem;
+  }
+
+  .blogBox {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6.4rem 3.2rem;
+  }
+
+  .blogPost {
+    display: grid;
+    gap: 4rem;
+    /* box-shadow: 0 4px 10px 2px var(--pry-color); */
+
+    .imgHolder {
+      /* width: 40.5rem; */
+      height: 28.5rem;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .blogDetails {
+      display: flex;
+      flex-direction: column;
+      gap: 1.6rem;
+
+      p {
+        color: #1c1e53c4;
+      }
+    }
+
+    a {
+      color: var(--pry-color);
+    }
+  }
+}

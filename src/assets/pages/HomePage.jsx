@@ -6,6 +6,7 @@ import NavBar from "../components/NavBar";
 import HomepageHero from "../components/HomepageHero";
 import FeaturesSection from "../components/FeaturesSection";
 import FaqSection from "../components/FaqSection";
+import BlogSection from "../components/BlogSection";
 
 const workStnArr = [
   { id: 1, heading: "Strategy" },
@@ -25,6 +26,7 @@ export default function HomePage() {
       <ReviewSection />
       <FaqSection />
       <InquirySection />
+      <BlogSection />
     </div>
   );
 }
