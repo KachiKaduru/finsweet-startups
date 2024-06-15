@@ -7,6 +7,7 @@ import HomepageHero from "../components/HomepageHero";
 import FeaturesSection from "../components/FeaturesSection";
 import FaqSection from "../components/FaqSection";
 import BlogSection from "../components/BlogSection";
+import Footer from "../components/Footer";
 
 const workStnArr = [
   { id: 1, heading: "Strategy" },
@@ -27,6 +28,7 @@ export default function HomePage() {
       <FaqSection />
       <InquirySection />
       <BlogSection />
+      <Footer />
     </div>
   );
 }
