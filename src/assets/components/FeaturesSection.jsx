@@ -25,19 +25,47 @@ export default function FeaturesSection() {
           <h2 className="fs-48-600">Design that solves problems, one product at a time</h2>
         </header>
 
-        <div className={styles.cards}>
+        <BenefitCardContainer>
           {featuresStnArr.map((card) => (
-            <div className={styles.card} key={card.id}>
-              <img src={card.icon} alt="icon" />
-              <h3 className="fs-24-500">{card.heading}</h3>
-              <p className="fs-16-400">
-                Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib
-                turpis eu gravida mi. Pellentesque et velit aliquam sed mi.
-              </p>
-            </div>
+            <BenefitCard key={card.id} card={card} bgColor={`#fff`} />
           ))}
-        </div>
+        </BenefitCardContainer>
       </section>
+    </div>
+  );
+}
+
+export function BenefitCardContainer({ children }) {
+  const benefitCardContainerStyles = {
+    display: "grid",
+    gridTemplateColumns: "repeat(3, 1fr)",
+    gap: "2.4rem 3.2rem",
+  };
+  return <div style={benefitCardContainerStyles}>{children}</div>;
+}
+
+export function BenefitCard({ card, bgColor = "red" }) {
+  const benefitCardStyles = {
+    backgroundColor: bgColor,
+    padding: "4.8rem 3.2rem 4.8rem 4.8rem",
+    display: "grid",
+    gap: "1.2rem",
+  };
+
+  const cardImageStyle = {
+    width: "4rem",
+    height: "3.5rem",
+    marginBottom: "1.2rem",
+  };
+
+  return (
+    <div style={benefitCardStyles} key={card.id}>
+      <img src={card.icon} alt="icon" style={cardImageStyle} />
+      <h3 className="fs-24-500">{card.heading}</h3>
+      <p className="fs-16-400">
+        Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu
+        gravida mi. Pellentesque et velit aliquam sed mi.
+      </p>
     </div>
   );
 }

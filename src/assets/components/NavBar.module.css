@@ -6,6 +6,8 @@
   background: var(--pry-color);
   padding: 3.4rem 0;
   align-content: center;
+  position: sticky;
+  top: 0;
 }
 
 .navbar section {

@@ -4,10 +4,33 @@ import missionImg1 from "../images/about-page/a-man-standing.png";
 
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
+import { BenefitCard, BenefitCardContainer } from "../components/FeaturesSection";
+import Sponsors from "../components/Sponsors";
+
+import icon1 from "../images/icons/featuresIcon1.svg";
+import icon3 from "../images/icons/featuresIcon3.svg";
+import icon6 from "../images/icons/featuresIcon6.svg";
+
+import profileImg1 from "../images/profiles/img1.png";
+import profileImg2 from "../images/profiles/img2.png";
+import profileImg3 from "../images/profiles/img3.png";
 
 const attributeArr = ["Goal focussed", "Continuous improvement"];
 
 const processArr = ["Planning", "Conception", "Design", "Development"];
+
+export const benefitsArr = [
+  { id: 1, heading: "Customize with ease", icon: icon3 },
+  { id: 1, heading: "Perfectly Responsive", icon: icon6 },
+  { id: 3, heading: "Friendly Support", icon: icon1 },
+];
+
+const teamArr = [
+  { id: 1, name: "John Smith", role: "CEO", img: profileImg1 },
+  { id: 2, name: "Simon Adams", role: "CTO", img: profileImg2 },
+  { id: 3, name: "Sarah Hardin", role: "Project Manager", img: profileImg3 },
+  { id: 4, name: "Paul Jones", role: "Design Lead", img: profileImg1 },
+];
 
 // const missionArr = [
 //   { id: 1, title: "Our Mission", heading: "Inspire, Innovate, Share", image: missionImg1 },
@@ -22,6 +45,10 @@ export default function AboutPage() {
       <AttributeSection />
       <ProcessSection />
       <MissionSection />
+      <BenefitSection people="us">
+        <Sponsors />
+      </BenefitSection>
+      <TeamSection />
       <Footer />
     </div>
   );
@@ -115,6 +142,47 @@ function MissionSection() {
           <div className={styles.stmImgBox}>
             <img src={missionImg1} alt="" />
           </div>
+        </div>
+      </section>
+    </div>
+  );
+}
+
+export function BenefitSection({ children, people = "us", padding = "pd-128" }) {
+  return (
+    <div className={styles.benefitSection}>
+      <section className={padding}>
+        <h2 className="fs-48-600">The benefits of working with {people}</h2>
+
+        <BenefitCardContainer>
+          {benefitsArr.map((card) => (
+            <BenefitCard key={card.id} card={card} bgColor="#F4F6FC" />
+          ))}
+        </BenefitCardContainer>
+
+        {children}
+      </section>
+    </div>
+  );
+}
+
+function TeamSection() {
+  return (
+    <div className={styles.teamSection}>
+      <section className="pd-128">
+        <h2 className="fs-48-600">Meet our Team</h2>
+
+        <div className={styles.team}>
+          {teamArr.map((person) => (
+            <div className={styles.profile} key={person.id}>
+              <div className={styles.imgHolder}>
+                <img src={person.img} alt="" />
+              </div>
+
+              <h4 className="fs-24-400">{person.name}</h4>
+              <p className="fs-16-400">{person.role}</p>
+            </div>
+          ))}
         </div>
       </section>
     </div>
