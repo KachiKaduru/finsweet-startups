@@ -117,18 +117,24 @@
 
   .statement {
     display: flex;
-    /* gap: 14rem; */
+    gap: 14rem;
+    background-color: red;
   }
 
-  .stmDetails {
-    display: grid;
+  .statementDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     gap: 1.6rem;
   }
 
-  .stmImgBox {
+  .statementImgBox {
     width: 51.5rem;
     height: 33.5rem;
-    background-color: red;
+
+    img {
+      height: 100%;
+    }
   }
 }
 
@@ -159,7 +165,7 @@
     .team {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 3.2rem;
+      gap: 3rem;
     }
 
     .profile {

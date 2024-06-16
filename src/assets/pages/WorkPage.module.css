@@ -1,0 +1,31 @@
+.workHero {
+  background: var(--grey-color);
+
+  section {
+    text-align: center;
+  }
+
+  h2 {
+    margin-bottom: 2rem;
+  }
+
+  p {
+    opacity: 70%;
+    width: 58%;
+    margin: auto;
+  }
+
+  .socialLinks {
+    display: flex;
+    gap: 2.7rem;
+    width: fit-content;
+    margin: auto;
+    padding: 3.2rem 0 0;
+
+    a img {
+      width: 1.8rem;
+      height: 1.8rem;
+      filter: invert(1);
+    }
+  }
+}

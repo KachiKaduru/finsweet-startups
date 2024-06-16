@@ -1,6 +1,6 @@
 import styles from "./AboutPage.module.css";
 import missionImg1 from "../images/about-page/a-man-standing.png";
-// import missionImg2 from "../images/about-page/photo-of women.png";
+import missionImg2 from "../images/about-page/photo-of-women.png";
 
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
@@ -19,9 +19,28 @@ const attributeArr = ["Goal focussed", "Continuous improvement"];
 
 const processArr = ["Planning", "Conception", "Design", "Development"];
 
-export const benefitsArr = [
+const missionArr = [
+  {
+    id: 1,
+    title: "Our Mission",
+    heading: "Inspire, Innovate, Share",
+    image: missionImg1,
+    direction: "row",
+    background: "#fff",
+  },
+  {
+    id: 2,
+    title: "Our Vision",
+    heading: "Laser focus",
+    image: missionImg2,
+    direction: "row-reverse",
+    background: "#fff",
+  },
+];
+
+const benefitsArr = [
   { id: 1, heading: "Customize with ease", icon: icon3 },
-  { id: 1, heading: "Perfectly Responsive", icon: icon6 },
+  { id: 2, heading: "Perfectly Responsive", icon: icon6 },
   { id: 3, heading: "Friendly Support", icon: icon1 },
 ];
 
@@ -31,11 +50,6 @@ const teamArr = [
   { id: 3, name: "Sarah Hardin", role: "Project Manager", img: profileImg3 },
   { id: 4, name: "Paul Jones", role: "Design Lead", img: profileImg1 },
 ];
-
-// const missionArr = [
-//   { id: 1, title: "Our Mission", heading: "Inspire, Innovate, Share", image: missionImg1 },
-//   { id: 2, title: "Our Vision", heading: "Laser focus", image: missionImg2 },
-// ];
 
 export default function AboutPage() {
   return (
@@ -128,22 +142,58 @@ function MissionSection() {
   return (
     <div className={styles.missionSection}>
       <section className="pd-128">
-        <div className={styles.statement}>
-          <div className="stm-details">
-            <h5 className="fs-16-500">xyz</h5>
-            <h3 className="fs-38-600">abc</h3>
-            <p className="fs-16-400">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
-          </div>
-
-          <div className={styles.stmImgBox}>
-            <img src={missionImg1} alt="" />
-          </div>
-        </div>
+        {missionArr.map((mission) => (
+          <Statement mission={mission} key={mission.id} direction={mission.direction} />
+        ))}
       </section>
+    </div>
+  );
+}
+
+export function Statement({
+  mission,
+  direction = "row",
+  gap = "14rem",
+  padding = "0",
+  background = "none",
+  width = "51.5rem",
+  height = "33.5rem",
+}) {
+  const statementStyle = {
+    display: "flex",
+    flexDirection: direction,
+    gap,
+    padding,
+    background,
+  };
+
+  const statementDetailsStyle = {
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    gap: "1.6rem",
+  };
+
+  const statementImgBoxStyle = {
+    width,
+    height,
+  };
+
+  return (
+    <div style={statementStyle}>
+      <div style={statementDetailsStyle}>
+        <h5 className="fs-16-500">{mission.title}</h5>
+        <h3 className="fs-38-600">{mission.heading}</h3>
+        <p className="fs-16-400">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+          ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+      </div>
+
+      <div style={statementImgBoxStyle}>
+        <img src={mission.image} alt="" style={{ height: "100%" }} />
+      </div>
     </div>
   );
 }
