@@ -1,0 +1,55 @@
+.contactSection {
+  section {
+    display: grid;
+    gap: 6.4rem;
+
+    .heading {
+      display: grid;
+      gap: 1.6rem;
+      width: 40%;
+      margin: auto;
+      text-align: center;
+    }
+
+    form {
+      background: var(--grey-color);
+      padding: 5.5rem 7.6rem 6.8rem;
+      display: grid;
+      gap: 2.4rem 3.2rem;
+      grid-template-columns: 1fr 1fr;
+
+      * {
+        font-family: "Poppins";
+        color: #000;
+      }
+
+      fieldset {
+        font-size: 1.8rem;
+        font-weight: 500;
+        display: grid;
+
+        input,
+        textarea,
+        select {
+          font-size: 1.6rem;
+          padding: 1.8rem 3.2rem;
+          border: 1px solid #0000001f;
+          background: none;
+          width: 100%;
+        }
+      }
+
+      .txtArea {
+        grid-column: 1/-1;
+      }
+
+      button {
+        padding: 1.6rem 6.4rem;
+        background: var(--dark-color);
+        color: var(--grey-color);
+        border-radius: 4rem;
+        width: fit-content;
+      }
+    }
+  }
+}

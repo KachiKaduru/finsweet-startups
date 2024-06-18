@@ -6,7 +6,7 @@ export default function NavBar() {
   return (
     <header className={styles.navbar}>
       <section>
-        <Link to="/" className="logo">
+        <Link to="/" className={styles.logo}>
           <img src={logoImg} alt="" />
         </Link>
 
@@ -16,11 +16,13 @@ export default function NavBar() {
             <NavLink to="/about">About Us</NavLink>
             <NavLink to="/features">Features</NavLink>
             <NavLink to="/pricing">Pricing</NavLink>
-            <NavLink to="/faq">FAQ</NavLink>
+            {/* <NavLink to="/faq">FAQ</NavLink> */}
             <NavLink to="/blog">Blog</NavLink>
           </ul>
 
-          <NavLink to="/contact">Contact us</NavLink>
+          <NavLink to="/contact" className={styles.contactBtn}>
+            Contact us
+          </NavLink>
         </nav>
       </section>
     </header>

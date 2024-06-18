@@ -1,18 +1,23 @@
 .navbar {
-  * {
-    color: #fff;
-  }
-
   background: var(--pry-color);
   padding: 3.4rem 0;
   align-content: center;
   position: sticky;
   top: 0;
+
+  * {
+    color: #fff;
+  }
 }
 
 .navbar section {
   display: flex;
   justify-content: space-between;
+
+  .logo {
+    display: flex;
+    align-self: center;
+  }
 
   nav {
     display: flex;
@@ -21,12 +26,19 @@
     ul {
       display: flex;
       gap: 3rem;
+      align-items: center;
 
       a {
         color: #bbbbcb;
         font-size: 1.6rem;
         font-weight: 500;
       }
+    }
+
+    .contactBtn {
+      padding: 1.6rem 4.8rem;
+      border: 1px solid #f4f6fc33;
+      border-radius: 4rem;
     }
   }
 }

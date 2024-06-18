@@ -17,6 +17,7 @@
   list-style: none;
   border: none;
   outline: none;
+  transition: all 0.3s;
 }
 
 html {
@@ -29,6 +30,7 @@ body {
 }
 
 section {
+  background: green;
   max-width: 1280px;
   margin: auto;
 }
@@ -127,4 +129,29 @@ section {
   font-size: 1.2rem;
   font-weight: 400;
   line-height: 2.8rem;
+}
+
+@media only screen and (max-width: 1080px) {
+  html {
+    font-size: 50%;
+  }
+  section {
+    background-color: goldenrod;
+  }
+}
+@media only screen and (max-width: 767px) {
+  html {
+    font-size: 40%;
+  }
+  section {
+    background-color: royalblue;
+  }
+}
+@media only screen and (max-width: 480px) {
+  html {
+    font-size: 30%;
+  }
+  section {
+    background-color: rebeccapurple;
+  }
 }
