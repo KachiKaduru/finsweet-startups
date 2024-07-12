@@ -30,7 +30,6 @@ body {
 }
 
 section {
-  background: green;
   max-width: 1280px;
   margin: auto;
 }
@@ -137,21 +136,5 @@ section {
   }
   section {
     background-color: goldenrod;
-  }
-}
-@media only screen and (max-width: 767px) {
-  html {
-    font-size: 40%;
-  }
-  section {
-    background-color: royalblue;
-  }
-}
-@media only screen and (max-width: 480px) {
-  html {
-    font-size: 30%;
-  }
-  section {
-    background-color: rebeccapurple;
   }
 }
