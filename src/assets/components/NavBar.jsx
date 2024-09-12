@@ -25,9 +25,9 @@ export default function NavBar() {
           width="40"
           height="40"
         >
-          <rect width="100" height="20" rx="10"></rect>
-          <rect y="30" width="100" height="20" rx="10"></rect>
-          <rect y="60" width="100" height="20" rx="10"></rect>
+          <rect width="100" height="15" rx="10"></rect>
+          <rect y="30" width="100" height="15" rx="10"></rect>
+          <rect y="60" width="100" height="15" rx="10"></rect>
         </svg>
 
         <nav className={`${styles.nav} ${isOpen ? styles.show : ""}`}>
