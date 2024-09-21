@@ -75,3 +75,35 @@
     }
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .footerStn {
+    main {
+      section {
+        grid-template-columns: 1fr;
+        padding-left: 2rem;
+        gap: 5rem;
+
+        .right {
+          .socialLinks {
+            a img {
+              width: 3.8rem;
+              height: 3.8rem;
+            }
+          }
+        }
+      }
+    }
+
+    aside section {
+      padding: 1rem 1rem 7rem 1rem;
+      justify-content: space-around;
+      gap: 2rem;
+
+      .footerNav {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+  }
+}

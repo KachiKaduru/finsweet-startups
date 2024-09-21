@@ -6,6 +6,7 @@
 .hero section {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-areas: "left right";
   gap: 6rem;
 }
 
@@ -13,6 +14,7 @@
   display: flex;
   flex-direction: column;
   gap: 2.4rem;
+  grid-area: left;
 
   p {
     margin-bottom: 2.4rem;
@@ -42,8 +44,67 @@
 
 .right {
   width: 100%;
+  grid-area: right;
 
   img {
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .hero {
+    padding: 14px;
+    background: var(--pry-color);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .hero {
+    section {
+      .left {
+        h1 {
+          font-size: 26px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .hero {
+    margin: auto;
+    section {
+      grid-template-columns: 1fr;
+      gap: 7.5rem;
+      grid-template-areas:
+        "right"
+        "left";
+
+      .right {
+        width: 70%;
+        margin: auto;
+      }
+
+      .left {
+        text-align: center;
+        width: 70%;
+        margin: auto;
+
+        h1 {
+          font-size: 22px;
+          line-height: 1.2;
+        }
+
+        p {
+          font-size: 16px;
+          font-weight: 400;
+          color: #ccc;
+        }
+      }
+
+      .links {
+        justify-content: center;
+      }
+    }
   }
 }

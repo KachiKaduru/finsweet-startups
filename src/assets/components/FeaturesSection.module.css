@@ -36,3 +36,13 @@
     }
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .featuresStn {
+    section {
+      .benefitCardContainerStyles {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  }
+}
