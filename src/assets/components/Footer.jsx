@@ -26,7 +26,8 @@ function MainFooter() {
           </Link>
 
           <p className="fs-16-500">
-            We are always open to discuss your project and improve your online presence.
+            We are always open to discuss your project and improve your online
+            presence.
           </p>
         </div>
 
@@ -34,8 +35,8 @@ function MainFooter() {
           <h2 className="fs-48-600">Lets Talk!</h2>
 
           <p className="fs-16-400">
-            We are always open to discuss your project, improve your online presence and help with
-            your UX/UI design challenges.
+            We are always open to discuss your project, improve your online
+            presence and help with your UX/UI design challenges.
           </p>
 
           <SocialLinks className={styles.socialLinks} />
@@ -70,7 +71,7 @@ function NavFooter() {
       <section>
         <h5 className="fs-16-500">Copyright 2022, Finsweet.com</h5>
 
-        <nav>
+        <nav className={styles.footerNav}>
           <Link to="/">Home</Link>
           <Link to="/about">About Us</Link>
           <Link to="/features">Features</Link>

@@ -4,7 +4,10 @@ import missionImg2 from "../images/about-page/photo-of-women.png";
 
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
-import { BenefitCard, BenefitCardContainer } from "../components/FeaturesSection";
+import {
+  BenefitCard,
+  BenefitCardContainer,
+} from "../components/FeaturesSection";
 import Sponsors from "../components/Sponsors";
 
 import icon1 from "../images/icons/featuresIcon1.svg";
@@ -15,7 +18,7 @@ import profileImg1 from "../images/profiles/img1.png";
 import profileImg2 from "../images/profiles/img2.png";
 import profileImg3 from "../images/profiles/img3.png";
 
-const attributeArr = ["Goal focussed", "Continuous improvement"];
+const attributeArr = ["Goal focused", "Continuous improvement"];
 
 const processArr = ["Planning", "Conception", "Design", "Development"];
 
@@ -76,8 +79,9 @@ function AboutUsSection() {
           <h5 className="fs-18-400">About Us</h5>
           <h1 className="fs-54-600">Our designs solve problems</h1>
           <p className="fs-16-400">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam.
           </p>
         </header>
         <div className={styles.imgContainer}></div>
@@ -99,9 +103,10 @@ function AttributeSection() {
                 <h3 className="fs-38-600">{attribute}</h3>
 
                 <p className="fs-16-400">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
               </div>
             ))}
@@ -129,7 +134,9 @@ function ProcessSection() {
               </div>
 
               <h4 className="fs-24-500">{process}</h4>
-              <p className="fs-16-400">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+              <p className="fs-16-400">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+              </p>
             </div>
           ))}
         </div>
@@ -143,7 +150,11 @@ function MissionSection() {
     <div className={styles.missionSection}>
       <section className="pd-128">
         {missionArr.map((mission) => (
-          <Statement mission={mission} key={mission.id} direction={mission.direction} />
+          <Statement
+            mission={mission}
+            key={mission.id}
+            direction={mission.direction}
+          />
         ))}
       </section>
     </div>
@@ -185,9 +196,10 @@ export function Statement({
         <h5 className="fs-16-500">{mission.title}</h5>
         <h3 className="fs-38-600">{mission.heading}</h3>
         <p className="fs-16-400">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-          ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
         </p>
       </div>
 
@@ -198,7 +210,11 @@ export function Statement({
   );
 }
 
-export function BenefitSection({ children, people = "us", padding = "pd-128" }) {
+export function BenefitSection({
+  children,
+  people = "us",
+  padding = "pd-128",
+}) {
   return (
     <div className={styles.benefitSection}>
       <section className={padding}>
