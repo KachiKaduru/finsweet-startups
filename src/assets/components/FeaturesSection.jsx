@@ -22,7 +22,9 @@ export default function FeaturesSection() {
       <section className="pd-128">
         <header>
           <h5 className="fs-16-500">Features</h5>
-          <h2 className="fs-48-600">Design that solves problems, one product at a time</h2>
+          <h2 className="fs-48-600">
+            Design that solves problems, one product at a time
+          </h2>
         </header>
 
         <BenefitCardContainer>
@@ -39,6 +41,7 @@ export function BenefitCardContainer({ children }) {
   const benefitCardContainerStyles = {
     display: "grid",
     gridTemplateColumns: "repeat(3, 1fr)",
+    // gridTemplateColumns: "1fr",
     gap: "2.4rem 3.2rem",
   };
   return <div style={benefitCardContainerStyles}>{children}</div>;
@@ -63,8 +66,8 @@ export function BenefitCard({ card, bgColor = "red" }) {
       <img src={card.icon} alt="icon" style={cardImageStyle} />
       <h3 className="fs-24-500">{card.heading}</h3>
       <p className="fs-16-400">
-        Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu
-        gravida mi. Pellentesque et velit aliquam sed mi.
+        Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed
+        faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi.
       </p>
     </div>
   );

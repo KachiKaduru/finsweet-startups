@@ -50,6 +50,65 @@
     }
   }
 }
+@media only screen and (max-width: 1080px) {
+  /* workstation */
+  .workStn {
+    background-color: yellow;
+    /* display: none; */
+
+    section {
+      grid-template-columns: 0.6fr 1.4fr;
+      padding: 14px;
+      gap: 3rem;
+    }
+
+    .workStnLeft {
+      gap: 7rem;
+    }
+
+    .workStnRight {
+      gap: 3.5rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .workStn {
+    section {
+      grid-template-columns: 1fr;
+      gap: 4rem;
+    }
+
+    .workStnLeft {
+      text-align: center;
+      gap: 2.7rem;
+
+      p {
+        margin: auto;
+        font-size: 2rem;
+      }
+    }
+
+    .workStnRight {
+      grid-template-columns: 1fr;
+      gap: 5rem;
+      text-align: center;
+
+      .attribute {
+        div {
+          margin: auto;
+          text-align: center;
+        }
+
+        p {
+          width: 100%;
+          text-align: center;
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}
 
 .projectStn {
   section {
@@ -86,6 +145,49 @@
   }
 }
 
+@media only screen and (max-width: 1024px) {
+  .projectStn {
+    section {
+      gap: 2rem;
+    }
+    .projectTop {
+      justify-content: space-around;
+    }
+    .down {
+      grid-template-columns: 1fr 1fr;
+      /* grid-template-columns: repeat(autofit, minmax(320px, 1fr)); */
+      padding: 3rem;
+
+      .cardOne {
+        grid-row: span 1;
+      }
+      .cardThree {
+        grid-row: span 2;
+        background-position: center;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .projectStn {
+    .down {
+      grid-template-columns: 1fr;
+      height: 120rem;
+
+      .cardOne,
+      .cardTwo {
+        background-position: center;
+      }
+
+      .cardThree {
+        grid-row: span 1;
+        background-position: center;
+      }
+    }
+  }
+}
+
 .reviewStn {
   background: var(--accent-color);
 
@@ -111,6 +213,55 @@
       img {
         width: 5.2rem;
         height: 5.2rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .reviewStn {
+    section {
+      grid-template-columns: 1fr 1fr;
+
+      .reviewRight {
+        h2 {
+          font-size: medium;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .reviewStn {
+    section {
+      grid-template-columns: 1fr;
+      padding: 0.6rem;
+      gap: 3rem;
+
+      .reviewLeft {
+        margin-bottom: 3rem;
+        h2,
+        p {
+          text-align: center;
+        }
+      }
+
+      .reviewRight {
+        h2 {
+          text-align: center;
+        }
+      }
+      .details {
+        .person {
+          justify-content: center;
+          align-items: center;
+
+          img {
+            width: 7rem;
+            height: 7rem;
+          }
+        }
       }
     }
   }
@@ -184,62 +335,10 @@
   }
 }
 
-@media only screen and (max-width: 1080px) {
-  /* workstation */
-  .workStn {
-    background-color: yellow;
-    /* display: none; */
-
-    section {
-      grid-template-columns: 0.6fr 1.4fr;
-      padding: 14px;
-      gap: 3rem;
-    }
-
-    .workStnLeft {
-      gap: 7rem;
-    }
-
-    .workStnRight {
-      gap: 3.5rem;
-    }
-  }
-}
-
-@media only screen and (max-width: 576px) {
-  .workStn {
+@media only screen and (max-width: 768px) {
+  .inqStn {
     section {
       grid-template-columns: 1fr;
-      gap: 4rem;
-    }
-
-    .workStnLeft {
-      text-align: center;
-      gap: 2.7rem;
-
-      p {
-        margin: auto;
-        font-size: 2rem;
-      }
-    }
-
-    .workStnRight {
-      grid-template-columns: 1fr;
-      gap: 5rem;
-      text-align: center;
-
-      .attribute {
-        div {
-          margin: auto;
-          text-align: center;
-        }
-
-        p {
-          width: 100%;
-          text-align: center;
-          font-size: 2rem;
-        }
-      }
     }
   }
 }
