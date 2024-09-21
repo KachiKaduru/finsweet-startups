@@ -59,6 +59,7 @@
     }
 
     button {
+      margin-top: auto;
       color: var(--grey-color);
       padding: 1.5rem 5.1rem;
       border-radius: 4rem;

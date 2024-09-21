@@ -1,4 +1,4 @@
-import styles from "../pages/WorkPage.module.css";
+import styles from "./WorkPage.module.css";
 
 import NavBar from "../components/NavBar";
 import { SocialLinks } from "../components/Footer";

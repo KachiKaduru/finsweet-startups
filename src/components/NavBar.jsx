@@ -1,7 +1,8 @@
 import { useState } from "react";
-import logoImg from "../images/Finsweet Logo.svg";
-import styles from "../components/NavBar.module.css";
 import { Link, NavLink } from "react-router-dom";
+
+import logoImg from "../_images/Finsweet Logo.svg";
+import styles from "./NavBar.module.css";
 
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,12 +23,12 @@ export default function NavBar() {
           onClick={toggleMenu}
           className={`${styles.hamburger} ${isOpen ? styles.active : ""}`}
           viewBox="0 0 100 80"
-          width="40"
-          height="40"
+          width="30"
+          height="20"
         >
-          <rect width="100" height="15" rx="10"></rect>
-          <rect y="30" width="100" height="15" rx="10"></rect>
-          <rect y="60" width="100" height="15" rx="10"></rect>
+          <rect width="100" height="12" rx="10"></rect>
+          <rect y="30" width="100" height="12" rx="10"></rect>
+          <rect y="60" width="100" height="12" rx="10"></rect>
         </svg>
 
         <nav className={`${styles.nav} ${isOpen ? styles.show : ""}`}>

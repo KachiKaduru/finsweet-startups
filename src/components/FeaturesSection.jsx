@@ -1,9 +1,9 @@
-import icon1 from "../images/icons/featuresIcon1.svg";
-import icon2 from "../images/icons/featuresIcon2.svg";
-import icon3 from "../images/icons/featuresIcon3.svg";
-import icon4 from "../images/icons/featuresIcon4.svg";
-import icon5 from "../images/icons/featuresIcon5.svg";
-import icon6 from "../images/icons/featuresIcon6.svg";
+import icon1 from "../_images/icons/featuresIcon1.svg";
+import icon2 from "../_images/icons/featuresIcon2.svg";
+import icon3 from "../_images/icons/featuresIcon3.svg";
+import icon4 from "../_images/icons/featuresIcon4.svg";
+import icon5 from "../_images/icons/featuresIcon5.svg";
+import icon6 from "../_images/icons/featuresIcon6.svg";
 
 import styles from "./FeaturesSection.module.css";
 
@@ -22,9 +22,7 @@ export default function FeaturesSection() {
       <section className="pd-128">
         <header>
           <h5 className="fs-16-500">Features</h5>
-          <h2 className="fs-48-600">
-            Design that solves problems, one product at a time
-          </h2>
+          <h2 className="fs-48-600">Design that solves problems, one product at a time</h2>
         </header>
 
         <BenefitCardContainer>
@@ -66,8 +64,8 @@ export function BenefitCard({ card, bgColor = "red" }) {
       <img src={card.icon} alt="icon" style={cardImageStyle} />
       <h3 className="fs-24-500">{card.heading}</h3>
       <p className="fs-16-400">
-        Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed
-        faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi.
+        Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu
+        gravida mi. Pellentesque et velit aliquam sed mi.
       </p>
     </div>
   );

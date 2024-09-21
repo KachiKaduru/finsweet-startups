@@ -130,16 +130,16 @@
 
     .cardOne {
       grid-row: span 2;
-      background: url(../images/home-page/Card.png);
+      background: url(../_images/home-page/Card.png);
       background-size: cover;
     }
 
     .cardTwo {
-      background: url(../images/home-page/Card2.png);
+      background: url(../_images/home-page/Card2.png);
       background-size: cover;
     }
     .cardThree {
-      background: url(../images/home-page/Card3.png);
+      background: url(../_images/home-page/Card3.png);
       background-size: cover;
     }
   }
@@ -277,7 +277,7 @@
   .inqLeft {
     padding: 9.6rem 9.6rem 0 9.6rem;
     background: linear-gradient(#1c1e5380, #1c1e5380),
-      url(../images/home-page/pexels-enginakyurt-3228878.jpg);
+      url(../_images/home-page/pexels-enginakyurt-3228878.jpg);
     background-size: cover;
 
     display: flex;

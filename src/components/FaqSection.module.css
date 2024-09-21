@@ -1,7 +1,7 @@
 .faqSection {
   section {
     display: grid;
-    grid-template-columns: 0.7fr 1.33fr;
+    grid-template-columns: 0.35fr 0.65fr;
   }
 
   .left {
@@ -52,21 +52,20 @@
 @media only screen and (max-width: 1024px) {
   .faqSection {
     section {
-      grid-template-columns: 1fr;
+      grid-template-columns: unset;
       /* justify-items: center; */
       gap: 3rem;
     }
 
     .left {
-      justify-self: center;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem 5rem;
+      flex-wrap: wrap;
 
       h2 {
-        text-align: center;
-        width: 100%;
-      }
-
-      a {
-        display: none;
+        width: unset;
       }
     }
   }

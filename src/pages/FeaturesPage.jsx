@@ -1,18 +1,19 @@
+import { Link } from "react-router-dom";
+
 import NavBar from "../components/NavBar";
 import Sponsors from "../components/Sponsors";
 import { BenefitSection } from "./AboutPage";
 import { Statement } from "./AboutPage";
 import FaqSection from "../components/FaqSection";
 import Footer from "../components/Footer";
-import { Link } from "react-router-dom";
 
-import styles from "../pages/FeaturesPage.module.css";
-import FeaturesHeroImg from "../images/features-page/Feature Hero Illustration.svg";
+import styles from "./FeaturesPage.module.css";
+import FeaturesHeroImg from "../_images/features-page/Feature Hero Illustration.svg";
 
-import featuresImg1 from "../images/features-page/features-img-1.png";
-import featuresImg2 from "../images/features-page/features-img-2.png";
-import featuresImg3 from "../images/features-page/features-img-3.png";
-import featuresImg4 from "../images/features-page/features-img-4.png";
+import featuresImg1 from "../_images/features-page/features-img-1.png";
+import featuresImg2 from "../_images/features-page/features-img-2.png";
+import featuresImg3 from "../_images/features-page/features-img-3.png";
+import featuresImg4 from "../_images/features-page/features-img-4.png";
 
 const featuresPageArr = [
   {

@@ -1,7 +1,7 @@
-import styles from "../components/BlogSection.module.css";
-import img1 from "../images/blog-page/arabic-businessman.png";
-import img2 from "../images/blog-page/woman-in-white-sleeveless.png";
-import img3 from "../images/blog-page/apple-monitors.png";
+import styles from "./BlogSection.module.css";
+import img1 from "../_images/blog-page/arabic-businessman.png";
+import img2 from "../_images/blog-page/woman-in-white-sleeveless.png";
+import img3 from "../_images/blog-page/apple-monitors.png";
 import { Link } from "react-router-dom";
 
 const blogHomePageArr = [

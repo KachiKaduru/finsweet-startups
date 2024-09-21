@@ -27,7 +27,7 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: "Poppins", sans-serif; 
+  font-family: "Poppins", sans-serif;
 }
 
 section {
@@ -35,6 +35,7 @@ section {
   // background: green;
   max-width: 1280px;
   margin: auto;
+  padding: 0 1rem;
 }
 
 .logo {
@@ -127,9 +128,9 @@ section {
     font-size: 50%;
   }
 
-  section {
-    background-color: goldenrod;
-  }
+  // section {
+  //   background-color: goldenrod;
+  // }
 }
 
 // @media only screen and (max-width: 767px) {

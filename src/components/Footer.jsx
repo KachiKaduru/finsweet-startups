@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
-import styles from "../components/Footer.module.css";
+import styles from "./Footer.module.css";
 
-import logoImg from "../images/Finsweet Logo.svg";
-import facebookIcon from "../images/icons/facebook.svg";
-import twitterIcon from "../images/icons/twitter.svg";
-import instagramIcon from "../images/icons/instagram.svg";
-import linkedinIcon from "../images/icons/linkedin.svg";
+import logoImg from "../_images/Finsweet Logo.svg";
+import facebookIcon from "../_images/icons/facebook.svg";
+import twitterIcon from "../_images/icons/twitter.svg";
+import instagramIcon from "../_images/icons/instagram.svg";
+import linkedinIcon from "../_images/icons/linkedin.svg";
 
 export default function Footer() {
   return (
@@ -26,8 +26,7 @@ function MainFooter() {
           </Link>
 
           <p className="fs-16-500">
-            We are always open to discuss your project and improve your online
-            presence.
+            We are always open to discuss your project and improve your online presence.
           </p>
         </div>
 
@@ -35,8 +34,8 @@ function MainFooter() {
           <h2 className="fs-48-600">Lets Talk!</h2>
 
           <p className="fs-16-400">
-            We are always open to discuss your project, improve your online
-            presence and help with your UX/UI design challenges.
+            We are always open to discuss your project, improve your online presence and help with
+            your UX/UI design challenges.
           </p>
 
           <SocialLinks className={styles.socialLinks} />

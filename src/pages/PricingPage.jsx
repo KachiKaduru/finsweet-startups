@@ -1,4 +1,4 @@
-import styles from "../pages/PricingPage.module.css";
+import styles from "./PricingPage.module.css";
 
 import NavBar from "../components/NavBar";
 import FaqSection from "../components/FaqSection";

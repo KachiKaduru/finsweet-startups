@@ -1,7 +1,7 @@
-import heroImg from "../images/home-page/Illustration.png";
-
 import { Link } from "react-router-dom";
-import styles from "../components/HomepageHero.module.css";
+import styles from "./HomepageHero.module.css";
+
+import heroImg from "../_images/home-page/Illustration.png";
 
 export default function HomepageHero() {
   return (

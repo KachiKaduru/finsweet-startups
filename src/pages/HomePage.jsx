@@ -1,6 +1,6 @@
-import styles from "./HomePage.module.css";
 import { Link } from "react-router-dom";
-import personImg from "../images/home-page/person.png";
+import styles from "./HomePage.module.css";
+import personImg from "../_images/home-page/person.png";
 
 import NavBar from "../components/NavBar";
 import HomepageHero from "../components/HomepageHero";

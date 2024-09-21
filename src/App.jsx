@@ -1,16 +1,18 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import HomePage from "./assets/pages/HomePage";
-import AboutPage from "./assets/pages/AboutPage";
-import PricingPage from "./assets/pages/PricingPage";
-import FeaturesPage from "./assets/pages/FeaturesPage";
-import BlogPage from "./assets/pages/BlogPage";
-import WorkPage from "./assets/pages/WorkPage";
-import ContactPage from "./assets/pages/ContactPage";
-import PageNotFound from "./assets/pages/PageNotFound";
+import HomePage from "./pages/HomePage";
+import AboutPage from "./pages/AboutPage";
+import FeaturesPage from "./pages/FeaturesPage";
+import PricingPage from "./pages/PricingPage";
+import BlogPage from "./pages/BlogPage";
+import WorkPage from "./pages/WorkPage";
+import ContactPage from "./pages/ContactPage";
+import PageNotFound from "./pages/PageNotFound";
+import ScrollToTop from "./components/ScrollToTop";
 
 export default function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<HomePage />}></Route>
         <Route path="about" element={<AboutPage />}></Route>

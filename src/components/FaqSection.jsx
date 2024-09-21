@@ -1,9 +1,9 @@
 /* eslint-disable no-unused-vars */
-import { Link } from "react-router-dom";
-import styles from "../components/FaqSection.module.css";
-
-import plusImg from "../images/icons/plus.png";
 import { useState } from "react";
+import { Link } from "react-router-dom";
+
+import styles from "./FaqSection.module.css";
+import plusImg from "../_images/icons/plus.png";
 
 const faqsArr = [
   { id: 1, question: "How much time does it take?" },

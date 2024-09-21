@@ -1,10 +1,10 @@
-import sponsorLogo1 from "../images/icons/Logo 1.svg";
-import sponsorLogo2 from "../images/icons/Logo 2.svg";
-import sponsorLogo3 from "../images/icons/Logo 3.svg";
-import sponsorLogo4 from "../images/icons/Logo 4.svg";
-import sponsorLogo5 from "../images/icons/Logo 5.svg";
+import sponsorLogo1 from "../_images/icons/Logo 1.svg";
+import sponsorLogo2 from "../_images/icons/Logo 2.svg";
+import sponsorLogo3 from "../_images/icons/Logo 3.svg";
+import sponsorLogo4 from "../_images/icons/Logo 4.svg";
+import sponsorLogo5 from "../_images/icons/Logo 5.svg";
 
-import styles from "../components/Sponsors.module.css";
+import styles from "./Sponsors.module.css";
 
 const sponsorsArr = [
   { id: 1, icon: sponsorLogo1 },

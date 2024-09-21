@@ -53,3 +53,15 @@
     }
   }
 }
+
+@media only screen and (max-width: 767px) {
+  .contactSection section {
+    .heading {
+      width: 70%;
+    }
+
+    form {
+      grid-template-columns: 1fr;
+    }
+  }
+}
