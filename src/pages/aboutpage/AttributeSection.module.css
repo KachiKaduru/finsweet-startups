@@ -1,0 +1,54 @@
+.attrStn {
+  section {
+    display: grid;
+
+    .attrTop {
+      background: var(--grey-color);
+      /* background: #f4f5f5; */
+      padding: 8rem;
+      h5 {
+        margin-bottom: 0.4rem;
+      }
+    }
+
+    .attributes {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      .attribute {
+        width: 92%;
+        display: grid;
+        gap: 1.6rem;
+      }
+    }
+
+    .imageBox {
+      height: 34rem;
+      background: url(../../_images/about-page/pexels-rdne-7413916.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+  }
+}
+
+/* @media only screen and (max-width: 768px) {
+    .attrStn {
+      section {
+        h5 {
+          text-align: center;
+          font-size: 2rem;
+          font-style: italic;
+        }
+        .attributes {
+          grid-template-columns: 1fr;
+          place-items: center;
+          gap: 3rem;
+  
+          p,
+          h3 {
+            text-align: center;
+          }
+        }
+      }
+    }
+  } */

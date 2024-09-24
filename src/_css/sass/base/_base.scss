@@ -1,3 +1,5 @@
+/* grid-template-columns: repeat(autofit, minmax(320px, 1fr)); */
+
 :root {
   --pry-color: #1c1e53;
   --sec-color: #f4f6fc;
@@ -33,7 +35,6 @@ section {
   // background: green;
   max-width: 1280px;
   margin: auto;
-  padding: 0 1rem;
 }
 
 // .container {
@@ -233,7 +234,7 @@ section {
 
 // Paddings
 .pd-128 {
-  @include padding-variation(12.8rem, 0);
+  @include padding-variation(12.8rem, 1.5rem);
 }
 
 .pd-96 {

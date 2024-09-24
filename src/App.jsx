@@ -1,13 +1,14 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import HomePage from "./pages/HomePage";
-import AboutPage from "./pages/AboutPage";
-import FeaturesPage from "./pages/FeaturesPage";
-import PricingPage from "./pages/PricingPage";
-import BlogPage from "./pages/BlogPage";
-import WorkPage from "./pages/WorkPage";
-import ContactPage from "./pages/ContactPage";
-import PageNotFound from "./pages/PageNotFound";
+
 import ScrollToTop from "./components/ScrollToTop";
+import HomePage from "./pages/homepage/HomePage";
+import AboutPage from "./pages/aboutpage/AboutPage";
+import PricingPage from "./pages/pricingpage/PricingPage";
+import FeaturesPage from "./pages/featurespage/FeaturesPage";
+import WorkPage from "./pages/WorkPage";
+import BlogPage from "./pages/blogpage/BlogPage";
+import ContactPage from "./pages/contactspage/ContactPage";
+import PageNotFound from "./pages/PageNotFound";
 
 export default function App() {
   return (

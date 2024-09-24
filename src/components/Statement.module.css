@@ -1,0 +1,15 @@
+/* .statement {
+} */
+
+.statementDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.6rem;
+}
+
+.statementImgBox {
+  img {
+    height: 100%;
+  }
+}

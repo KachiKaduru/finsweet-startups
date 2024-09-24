@@ -1,0 +1,76 @@
+.projectStn {
+  section {
+    display: grid;
+    gap: 6.4rem;
+  }
+
+  .projectTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .down {
+    display: grid;
+    grid-template-columns: 1.3fr 0.7fr;
+    gap: 3.2rem;
+    height: 60rem;
+
+    .cardOne {
+      grid-row: span 2;
+      background: url(../../_images/home-page/Card.png);
+      background-size: cover;
+    }
+
+    .cardTwo {
+      background: url(../../_images/home-page/Card2.png);
+      background-size: cover;
+    }
+    .cardThree {
+      background: url(../../_images/home-page/Card3.png);
+      background-size: cover;
+    }
+  }
+}
+
+/* @media only screen and (max-width: 1024px) {
+  .projectStn {
+    section {
+      gap: 2rem;
+    }
+    .projectTop {
+      justify-content: space-around;
+    }
+    .down {
+      grid-template-columns: 1fr 1fr;
+      padding: 3rem;
+
+      .cardOne {
+        grid-row: span 1;
+      }
+      .cardThree {
+        grid-row: span 2;
+        background-position: center;
+      }
+    }
+  }
+} */
+
+/* @media only screen and (max-width: 768px) {
+  .projectStn {
+    .down {
+      grid-template-columns: 1fr;
+      height: 120rem;
+
+      .cardOne,
+      .cardTwo {
+        background-position: center;
+      }
+
+      .cardThree {
+        grid-row: span 1;
+        background-position: center;
+      }
+    }
+  }
+} */

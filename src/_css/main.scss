@@ -1,11 +1,11 @@
-@import 'sass/abstract/variables';
-@import 'sass/abstract/mixins';
+@import "sass/abstract/variables";
+@import "sass/abstract/mixins";
 
-@import 'sass/base/animations';
-@import 'sass/base/base';
+@import "sass/base/animations";
+@import "sass/base/base";
 
-@import 'sass/pages/home';
+@import "sass/pages/home";
 
-@import 'sass/layout/header';
-@import 'sass/layout/footer';
-@import 'sass/layout/m-queries';
+// @import "sass/layout/header";
+// @import "sass/layout/footer";
+@import "sass/layout/m-queries";

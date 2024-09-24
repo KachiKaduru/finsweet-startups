@@ -1,8 +1,8 @@
 import styles from "./PricingPage.module.css";
 
-import NavBar from "../components/NavBar";
-import FaqSection from "../components/FaqSection";
-import Footer from "../components/Footer";
+import NavBar from "../../components/NavBar";
+import FaqSection from "../../components/FaqSection";
+import Footer from "../../components/Footer";
 
 const pricingListArr = [
   {

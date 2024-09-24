@@ -40,25 +40,3 @@
     }
   }
 }
-
-@media only screen and (max-width: 768px) {
-  section {
-    h2 {
-      text-align: center;
-    }
-    /* .blogPost {
-      .blogDetails {
-        justify-content: space-around;
-        flex-direction: row;
-      }
-    } */
-  }
-  .blogStn {
-    .blogBox {
-      grid-template-columns: 0.8fr;
-      justify-content: center;
-      gap: 3rem;
-      padding: 1rem;
-    }
-  }
-}

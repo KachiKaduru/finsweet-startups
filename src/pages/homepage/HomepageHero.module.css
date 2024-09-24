@@ -11,10 +11,10 @@
 }
 
 .left {
+  grid-area: left;
   display: flex;
   flex-direction: column;
   gap: 2.4rem;
-  grid-area: left;
 
   p {
     margin-bottom: 2.4rem;
@@ -43,15 +43,15 @@
 }
 
 .right {
-  width: 100%;
   grid-area: right;
+  width: 100%;
 
   img {
     width: 100%;
   }
 }
 
-@media only screen and (max-width: 1080px) {
+/* @media only screen and (max-width: 1080px) {
   .hero {
     padding: 14px;
     background: var(--pry-color);
@@ -106,5 +106,27 @@
         justify-content: center;
       }
     }
+  }
+} */
+
+@media only screen and (max-width: 600px) {
+  .hero section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left {
+    text-align: center;
+    width: 90%;
+    margin: auto;
+  }
+
+  .links {
+    justify-content: space-around;
+  }
+
+  .right {
+    width: 80%;
+    margin: auto;
   }
 }
